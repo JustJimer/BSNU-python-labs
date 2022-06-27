@@ -1,3 +1,6 @@
+from decimal import Decimal
+
+
 def task1():
     print("TASK1")
     a = 2
@@ -90,9 +93,14 @@ def task10():
 
 def task11():
     print("\n\nTASK11")
+    number = 0.1 + 0.1 + 0.1
+    print(number)  # 0.30000000000000004
+    number = Decimal("0.1")
+    number = number + number + number
+    print(number)  # 0.3
 
 
-def run():
+def main():
     task1()
     task2and3()
     task4()
